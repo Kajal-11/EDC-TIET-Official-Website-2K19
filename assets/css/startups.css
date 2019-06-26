@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+.main_body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 60px 60px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 600px;
+    margin: 30px;
+    box-shadow: 4px 4px 8px #ccc;
+}
+
+.card-header{
+    color: #f50136;
+    background: #000;
+    font-size: 28px;
+}
+
+h5.card-header{
+    text-align: center;
+}
+
+.top{
+    display: flex;
+}
+
+.details{
+    flex: 1;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+.description{
+    padding: 5px 0px;
+}
+
+#internships{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.internships{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 6px;
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+}
+
+@media screen and (max-width: 450px){
+    .main_body{
+        margin: 60px 0px;
+    }
+    
+    .top{
+        flex-direction: column;
+    }
+
+    .internships{
+        width: 100%;
+    }
+} 
